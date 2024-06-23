@@ -27,5 +27,5 @@ for i in range(len(temp_filelist)):
     # note: {:04d} for 1000-9999 files!
     newfile = filepath + "/" + platzhalter + "_" + "{:03d}".format(i+1)+fileextension
     # optionally check the renamed file list before actually renaming:
-    # print(file)
+    # print(newfile)
     os.rename(file, newfile)
